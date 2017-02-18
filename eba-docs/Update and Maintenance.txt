@@ -1,0 +1,35 @@
+#   # ####  ####   ###  ##### ##### #   #  ####
+#   # #   # #   # #   #   #     #   ##  # #
+#   # ####  #   # #####   #     #   # # # #  ##
+#   # #     #   # #   #   #     #   #  ## #   #
+ ###  #     ####  #   #   #   ##### #   #  ####
+
+This document is intended to teach you about how to update ElectricBee's Aerials, should the time come to do so (because of a new release, bug fixing or anything else). This document also intends to teach about removal, should you no longer want to use this kit.
+
+* Updating
+Only applies to people who chose to run the scripts in eba-inst/copy files. If there is an update available, extract the updated contents and run the following after changing into your Re-Volt directory on cmd or terminal / temrinal emulator:
+  > Windows
+  eba-bat\upd.bat
+  > Other systems
+  sh eba-sh/upd.sh
+
+If you ran either of the files in eba-inst/link files you don't need to do this because the overwriting of EBAFxpage1.bmp updates the content loaded by the game.
+
+* Updating outside of Windows
+./fix_cases from RVGL is included for Linux users who want to use the scripting; This script will make all directories and files use lower case to make modifying them less of an ordeal. If there is a change in this script some time in the future, or if the script is considered obsolete because of advancements in RVGL, this script will have its filename and / or location modified depending on what Jig and Huki do with it.
+
+* Removing
+If you find you no longer want this update (either because you don't use the provided files or anything else that requires it, or you've grown sick of it), then open cmd or a terminal and do the following:
+  > Windows
+  eba-bat\rm.bat
+  > Other systems
+  sh eba-sh/rm.sh
+
+* Non-destructively starting over [EXISTS]
+There are do-over scripts included that will try their best to undo changes that had been made by the other included scripts without completely removing EBA. You'll only want to do this if somehow you goofed up the command prompts, have some odd privilege mixing and things didn't quite take, or some other unexpected reason why failure happened the first time.
+
+You'll also want to use these scripts if you intend to change duplication methods or use RVGL on Linux, and had chosen to make links in Windows instead of copies; Folder links are recognized in Linux, but not file links, as mklink handles things differently from ln, which makes these links completely completely useless between systems.
+  > Windows
+  eba-bat\reset.bat
+  > Other systems
+  eba-sh/reset.bat

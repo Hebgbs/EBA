@@ -1,0 +1,51 @@
+#####       ####  ##### #####  ###   ####
+#           #   # #     #      ###  #
+###   ##### ####  ###   ###          ###
+#           #   # #     #               #
+#####       ####  ##### #####       ####
+Aerials for everybody.  More info at RVL.
+ ###  ##### ####  #####  ###  #      ####
+#   # #     #   #   #   #   # #     #
+##### ###   ####    #   ##### #      ###
+#   # #     #  #    #   #   # #         #
+#   # ##### #   # ##### #   # ##### ####
+
+"Woah, what? What are all of these folders?!"
+
+Relax, I know it's a little overwhelming. I kept everything in folders to tidy up the archive, and keep your installation from being a mess of scripts and other guff.
+
+Had ElectricBee's Aerials before? If you wish, Prior to extracting, cd to your game directory then perform the following;
+* Windows
+del /Q eba*
+
+* Other systems
+rm -rf eba*
+
+Other things you can do that might help to "Clean-slate" your Re-Volt installation, had you installed EBA before:
+1. Resetting everything prior to overwriting:
+  > Windows
+  eba-bat/reset.bat
+  > Other systems
+  sh eba-sh\reset.sh
+
+2. Nuking it from orbit
+  > Windows
+  eba-bat/rm.bat
+  > Other systems
+  sh eba-sh\rm.sh
+
+Here's what each folder is about:
+
+* eba-docs
+Information you need to know. IMPORTANT; Visit this folder first!
+
+* eba-inst
+Installer scripts. Information in eba-docs/details.txt
+
+* eba-bat
+Batch files for Windows
+
+* eba-sh
+Shell scripts for other systems; Windows users need not apply.
+
+View the contents of each folder for more information about what each of the files do.

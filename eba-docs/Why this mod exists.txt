@@ -1,0 +1,20 @@
+ #### #####  ###  ####  #   #
+#       #   #   # #   #  # #
+ ###    #   #   # ####    #
+    #   #   #   # #  #    #
+####    #    ###  #   #   #
+
+ElectricBee's Aerials was created with love and passion, as a response to Iron Bob's Aerials being all messed up. There were several problems I had discovered in the creation of this kit;
+
+* His aerials were see-through in some strange way where the aerials would be hidden under tire treads
+* They were difficult to customize much because he kept himself to the limitations of the game;
+* The stock aerials he used had some of the aerial body on the tip, which without modification limited what he could do with them
+* No replacement beachball was included to account for his changes in FxPage1.bmp
+
+Honestly, it was the last point that eventually made me break down and make this. Trust me, I didn't want to, but I figured if I am going to be cleaning up after his mistakes thirteen years ago, I may as well make my kit a markable improvement over his existing kit, which is why I also included ways for people to use my aerials with his cars that use his aerials, which he practically forced people to install if users didn't want to have any errors with their game, while using his cars as he intended.
+
+So after having to practically re=make everything over again, and again, and again, I present the "Rebirth" iteration of Electric Bee's Aerials. I hope you enjoy.
+
+See "Do it" for a quick reference.
+See "Details" for a breakdown of what scripts in eba-inst rely on.
+See "Update and maintenance" for information about use of future revisions.
