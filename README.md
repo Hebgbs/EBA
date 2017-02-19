@@ -60,8 +60,8 @@ If you are looking to improve the look of your vehicle library using this, there
 `cp ./rc/parameters.txt ./rc_eba`
 
 Then open the parameters file you ust copied, modifying it to suit (This should appear as formatted code: If it does not I will fix it later);
-```Name      	"RC Bandit (EBA)"
-
+```
+Name      	"RC Bandit (EBA)"
 
 ;====================
 ; Model Filenames
