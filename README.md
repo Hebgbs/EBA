@@ -28,12 +28,14 @@ After executing any of the scripts compatible for your system as instructed in t
 
 ###_What is this other stuff you keep talking about?_
 **Iron Bob's Aerials**
+
 This is the kit that preceded ElectricBee's Aerials. This previous aerial set, which is intended to provide dfferent aerials for his vehicles were made in such a way that limited customization and presented a myraid of issues which I felt needed to be resolved. This pack intends to not just resolve these issues, but introduce new colours and improved appearances for all aerials, making them relatively easy to use and implement in other works.
 
 **The beachballs**
+
 Two beachball models of differeing names are included, and perform differently;
-* Scalefix: This version of the beachball is made expressly to resolve the slightly odd appearance of the default beachball by using UV mapping that renders the sides of the beachball as completely solid colours. This is intended for users who wish to just fix its appearance and not customize it.
-* Blockfix: This version of the beachballl is made to work with the new block of colour seen in `eba-docs/overlay.png` and `gfx/EBAFxPage1.bmp`, and can be very easily customized to change the colour of the beachball. useful for maps which have different FxPage1.bmp textures in their `custom` folder.
+* _Scalefix_: This version of the beachball is made expressly to resolve the slightly odd appearance of the default beachball by using UV mapping that renders the sides of the beachball as completely solid colours. This is intended for users who wish to just fix its appearance and not customize it.
+* _Blockfix_: This version of the beachballl is made to work with the new block of colour seen in `eba-docs/overlay.png` and `gfx/EBAFxPage1.bmp`, and can be very easily customized to change the colour of the beachball. useful for maps which have different FxPage1.bmp textures in their `custom` folder.
 
 ###For developers and makers
 Please put heavy consideration toward your users when including this pack. Most of them may have no interest in this small detail, and as such, may have no interest in downloading additional content just to use your cars.
@@ -58,7 +60,8 @@ If you are looking to improve the look of your vehicle library using this, there
 `cp ./rc/parameters.txt ./rc_eba`
 
 Then open the parameters file you ust copied, modifying it to suit;
-```Name      	"RC Bandit (EBA)"
+```
+Name      	"RC Bandit (EBA)"
 
 
 ;====================
@@ -86,6 +89,7 @@ MODEL 	17 	"cars\misc\EBAs-FFFFFF.m"
 MODEL 	18 	"cars\misc\EBAt-FF8000.m"
 TPAGE 	"cars\rc\car.bmp"
 COLL 	"cars\rc\hull.hul"
-EnvRGB 	200 200 200```
+EnvRGB 	200 200 200
+```
 
 That should produce a vehicle that will be named "RC Bandit (EBA)", loading all original assets from `./cars/rc` and the new assets this mod will include, from directory `./cars/rc_eba`. It doesn't have to be that exact configuration however since Re-Volt is very flexible with filenames and such, and everything provided is _only an example_; use whatever arguments you wish within reason.
