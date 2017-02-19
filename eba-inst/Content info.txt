@@ -1,0 +1,9 @@
+This is the content you're suppose to run for the installation to take place. Both folders do the following, with the end result being use of ElectricBee's Aerials for all cars, especially those that use Iron Bob's Aerials;
+> "Copy files": Make duplicates from whatever files are necessary to apply the mod
+> "Link files": Make references to whatever files are necessary to apply the mod
+
+You cannot use any of the link scripts prior to Windows Vista without difficulty and additional configuration. Anything prior to Windows XP can only use the copy scripts.
+
+DO NOT under any circumstances execute these files in the repository, or any of the installers in eba-inst. This will modify the repository contents in undesireable ways.
+
+Move these contents to your game first before executing any of the installer scripts!

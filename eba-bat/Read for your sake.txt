@@ -1,0 +1,3 @@
+DO NOT under any circumstances execute these files in the repository, or any of the installers in eba-inst. This will modify the repository contents in undesireable ways.
+
+Move these contents to your game first before executing any of the installer scripts!
