@@ -59,7 +59,7 @@ If you are looking to improve the look of your vehicle library using this, there
 `mkdir rc_eba`
 `cp ./rc/parameters.txt ./rc_eba`
 
-Then open the parameters file you ust copied, modifying it to suit (This should appear as formatted code: If it does not I will fix it later);
+Then open the parameters file you ust copied, modifying it to suit;
 ```
 Name      	"RC Bandit (EBA)"
 
