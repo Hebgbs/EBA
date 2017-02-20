@@ -27,12 +27,10 @@ After executing any of the scripts compatible for your system as instructed in t
  * More information about these is provided in the next section
 
 ###_What is this other stuff you keep talking about?_
-**Iron Bob's Aerials**
-
+####Iron Bob's Aerials
 This is the kit that preceded ElectricBee's Aerials. This previous aerial set, which is intended to provide dfferent aerials for his vehicles were made in such a way that limited customization and presented a myraid of issues which I felt needed to be resolved. This pack intends to not just resolve these issues, but introduce new colours and improved appearances for all aerials, making them relatively easy to use and implement in other works.
 
-**The beachballs**
-
+####The beachballs
 Two beachball models of differeing names are included, and perform differently;
 * _Scalefix_: This version of the beachball is made expressly to resolve the slightly odd appearance of the default beachball by using UV mapping that renders the sides of the beachball as completely solid colours. This is intended for users who wish to just fix its appearance and not customize it.
 * _Blockfix_: This version of the beachballl is made to work with the new block of colour seen in `eba-docs/overlay.png` and `gfx/EBAFxPage1.bmp`, and can be very easily customized to change the colour of the beachball. useful for maps which have different FxPage1.bmp textures in their `custom` folder.
@@ -41,14 +39,14 @@ Two beachball models of differeing names are included, and perform differently;
 Please put heavy consideration toward your users when including this pack. Most of them may have no interest in this small detail, and as such, may have no interest in downloading additional content just to use your cars.
 
 At the very least, _if you must_ include anything from the pack, have it be the following;
-`cars/gfx/EBAFxPage1.bmp` (renamed to `FxPage1.bmp)
-_Any of the EBA stem and tip models you are using from_ `cars/misc`
-`models/sfbeachball.m` (renamed to beachball.m)
-`eba-docs/overlay.png`
-`eba-docs/Overlay for unmodded FxPage1.txt`
-`eba-docs/Get ElectricBee's Aerials.url`
-`stocks/gfx/FxPage1.bmp`
-_This readme file._
+* `cars/gfx/EBAFxPage1.bmp` (renamed to `FxPage1.bmp)`
+* _Any of the EBA stem and tip models you are using from_ `cars/misc`
+* `models/sfbeachball.m` (renamed to beachball.m)
+* `eba-docs/overlay.png`
+* `eba-docs/Overlay for unmodded FxPage1.txt`
+* `eba-docs/Get ElectricBee's Aerials.url`
+* `stocks/gfx/FxPage1.bmp`
+* _This readme file._
 
 If you can help it, don't include the full contents of this pack directly. There may be more significant changes in the future, and I would rather users keep up with them than to use an outdated version of my kit so everybody receives the result expected.
 
