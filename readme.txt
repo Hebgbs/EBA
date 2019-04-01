@@ -28,4 +28,4 @@ This script will work so long it is pointed to the correct cars directory for th
 
 To update aerials in the future, simply run the batch script again and choose to update aerials. Nothing else really needs to be done except if you want to edit the "blockfix" beachball by specifying its use and changing the small island of colour in EBAgfx/FxPage1.bmp.
 
-Do not submit future changes for FxPage1.bmp: They will be ignored, and probably superseded. If you want changes of FxPage1.bmp to persist, choose to copy it directly into your game's gfx directory instead.
+Do not submit future changes for FxPage1.bmp: They will be ignored, and probably superseded. If you want changes of FxPage1.bmp to persist, choose to copy it directly into your game's gfx directory instead and decline future changes to it; the script will ask upon updating aerials if you want to overwrite present FxPage1.bmp (of which you will lose changes because it will link the copy from the GitHub repository again).
