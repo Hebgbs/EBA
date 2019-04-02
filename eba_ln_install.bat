@@ -15,7 +15,7 @@ REM | End of user-adjustable paremetres.
 REM | Begin developer parametres.
 REM | ----------------------------------
 REM | Exit behaviour; Change this to include /b if you want cmd to remain open. Useful for development.
-SET exitCmd=EXIT
+SET exitCmd=EXIT /b
 
 ECHO Requesting for administrative privileges...
 cd /d "%~dp0" && (if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs") && fsutil dirty query %systemdrive% 1>nul 2>nul || (  echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit )
@@ -44,6 +44,7 @@ IF %MOD%==3 GOTO eba_rm
 ECHO.
 ECHO Updating aerials...
 ECHO -------------------
+CALL .lncmd.bat
 CALL :eba_A
 ECHO.
 ECHO Update FxPage1.bmp?
@@ -87,8 +88,16 @@ ECHO.
 CHOICE /N /C:12 /M "Selection: "
 IF ERRORLEVEL 1 SET LNB=1
 IF ERRORLEVEL 2 SET LNB=2
-IF %LNB%==1 SET mln=MKLINK
-IF %LNB%==2 SET mln=MKLINK /h
+IF %LNB%==1 (
+ECHO REM This file does nothing on its own. Run the batch file instead! > %~dp0\.lncmd.bat
+ECHO SET mln=MKLINK >> %~dp0\.lncmd.bat
+ECHO EXIT /b >> %~dp0\.lncmd.bat
+)
+IF %LNB%==2 (
+ECHO REM This file does nothing on its own. Run the batch file instead! > %~dp0\.lncmd.bat
+ECHO SET mln=MKLINK /h >> %~dp0\.lncmd.bat
+ECHO EXIT /b >> %~dp0\.lncmd.bat
+)
 
 :bbmenu
 CLS
@@ -119,6 +128,7 @@ IF NOT EXIST %~dp0\.bbbupd GOTO eba_rdy
 ECHO.
 ECHO Updating beachball...
 ECHO ---------------------
+CALL .lncmd.bat
 CALL :eba_B
 DEL %~dp0\.bbupd
 GOTO fin_ln
@@ -145,6 +155,7 @@ IF NOT EXIST ~%dp0\.installed (
 )
 
 :do_ln
+CALL %~dp0\.lncmd.bat
 CALL :eba_A
 CALL :eba_B
 CALL :eba_G
@@ -338,6 +349,7 @@ ECHO Press any key to exit this script.
 IF EXIST %~dp0\.remove (
   DEL %~dp0\.installed
   DEL %~dp0\.remove
+  DEL %~dp0\.lncmd.bat
 )
 IF EXIST ~%dp0\.installed (
   ECHO.

@@ -13,7 +13,7 @@ So right, if you've used EBA before this is totally different, and you should ei
 
 If you haven't ran any of my previous scripts before, then you're in luck; I've simplified my batch instance for this content to a single file, with different routines depending on what you select. So basically this is how things work:
 
-* Run ebba_ln_inst.bat
+* Run eba_ln_inst.bat
 * Make selections for script Behaviour
 * Let it rip
 
@@ -24,6 +24,7 @@ This script will work so long it is pointed to the correct cars directory for th
   * .installed: Created upon first use of batch script
   * .remove: Created when choosing to uninstall; is deleted along with .installed afterward
   * .bbupd: Created when changign what beachball model is in use, deleted when finished.
+  * .lncmd.bat: A special batch file which is created to remember your link preference.
 3. If .installed exists, then a different menu with options for changing individual aspects of your installation will render instead of the initialization menu.
 
 To update aerials in the future, simply run the batch script again and choose to update aerials. Nothing else really needs to be done except if you want to edit the "blockfix" beachball by specifying its use and changing the small island of colour in EBAgfx/FxPage1.bmp.
